@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#FBF7F0" />
+    <title>Shoply — Page not found</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        background: #fbf7f0;
+        color: #171412;
+        font-family: "Manrope", system-ui, sans-serif;
+        text-align: center;
+      }
+      .mark {
+        width: 56px;
+        height: 56px;
+        margin: 0 auto 24px;
+        border-radius: 17px;
+        background: #ff5a1f;
+        color: white;
+        display: grid;
+        place-items: center;
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-size: 30px;
+        font-weight: 800;
+      }
+      h1 {
+        margin: 0 0 12px;
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-size: clamp(38px, 7vw, 64px);
+        letter-spacing: -0.05em;
+      }
+      p { color: #6d655d; line-height: 1.6; }
+      a {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 12px 20px;
+        border-radius: 999px;
+        background: #171412;
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+      }
+    </style>
+    <script>
+      const base = '/shoply-demo';
+      const path = window.location.pathname;
+      const target = path.startsWith(base + '/admin') ? base + '/admin/' : base + '/';
+      window.setTimeout(() => window.location.replace(target), 1200);
+    </script>
+  </head>
+  <body>
+    <main>
+      <div class="mark" aria-hidden="true">S</div>
+      <h1>This stall moved.</h1>
+      <p>Taking you back to the Shoply demo.</p>
+      <a href="/shoply-demo/">Back to Shoply</a>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+{
+    "name": "Shoply — Market Day",
+    "short_name": "Shoply",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#FBF7F0",
+    "theme_color": "#FF5A1F",
+    "description": "A Market Day storefront with good finds and fair prices.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
